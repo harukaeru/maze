@@ -1,0 +1,26 @@
+.row {
+  display: flex;
+}
+.cell {
+  cursor: pointer;
+  border-top: #BBB 1px solid;
+  border-left: #BBB 1px solid;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.cell-right-last {
+  border-right: #BBB 1px solid;
+}
+.cell-bottom {
+  border-bottom: #BBB 1px solid;
+}
+
+.cell[data-status="cell-blank"] {
+  background-color: white;
+}
+.cell[data-status="cell-filled"] {
+  background-color: black;
+}
